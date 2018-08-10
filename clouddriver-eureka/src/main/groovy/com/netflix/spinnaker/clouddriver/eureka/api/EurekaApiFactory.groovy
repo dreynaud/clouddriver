@@ -33,6 +33,7 @@ class EurekaApiFactory {
     new RestAdapter.Builder()
       .setConverter(eurekaConverter)
       .setEndpoint(endpoint)
+      .setLogLevel(RestAdapter.LogLevel.BASIC)
       .build()
       .create(EurekaApi)
   }

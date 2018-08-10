@@ -23,6 +23,6 @@ import retrofit.http.Headers
 interface EurekaApi {
 
   @GET('/apps')
-  @Headers(['Accept: application/json'])
+  @Headers(['Accept: application/json', 'Accept-encoding: gzip'])
   EurekaApplications loadEurekaApplications()
 }
